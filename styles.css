@@ -162,6 +162,18 @@ h2 {
   letter-spacing: 0;
 }
 
+.section-copy {
+  max-width: 760px;
+  margin: -6px 0 24px;
+  color: var(--muted);
+  font-size: 1.02rem;
+}
+
+.section-copy a {
+  color: var(--blue);
+  font-weight: 800;
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -212,6 +224,36 @@ h2 {
   margin-top: 12px;
   color: var(--coral);
   font-weight: 800;
+}
+
+.reading {
+  border-top: 1px solid var(--line);
+}
+
+.reading-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 14px;
+}
+
+.reading-item {
+  min-height: 150px;
+  padding: 20px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 12px 28px rgba(23,32,42,0.05);
+}
+
+.reading-item a {
+  color: var(--blue);
+  font-size: 1.02rem;
+  font-weight: 850;
+}
+
+.reading-item p {
+  margin: 12px 0 0;
+  color: var(--muted);
 }
 
 .skills {
