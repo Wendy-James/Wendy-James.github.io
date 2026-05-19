@@ -15,8 +15,8 @@ https://Wendy-James.github.io/
 
 ## 精选项目
 
-- [外贸全品类获客助手 / AI B2B Outreach Workbench](https://github.com/Wendy-James/waimao-quanpinlei-huoke-zhushou)：Python 本地人工审核工作台，覆盖 workflow、dry-run、安全闸、隐私脱敏和本地自动化安全测试。
-- 研究与项目经历：AI 求职辅助、文档智能省级项目、5G 网络切片智能交通优化研究，作为经历说明呈现，不伪装成公开源码仓库。
+- [Project Briefs](https://github.com/Wendy-James/project-briefs)：集中整理 AI 求职辅助、文档智能省级项目、外贸 AI workflow 和 5G 网络切片研究的公开简报。
+- 外贸全品类获客助手 / AI B2B Outreach Workbench：Python 本地人工审核工作台，覆盖 workflow、dry-run、安全闸、隐私脱敏和本地自动化安全测试；公开页面只展示脱敏架构简报。
 - [AI 知识助手单页演示](https://github.com/Wendy-James/ai-zhishi-zhushou)：文档上传 + 聊天问答前端原型，预留 `POST /upload` 与 `POST /ask` 接口约定。
 - [Vue 2 Admin Dashboard Practice](https://github.com/Wendy-James/mas-chuangzuozhe-houtai)：Vue 2 + Element UI 后台管理系统练习。
 - [open-source-reading-notes](https://github.com/Wendy-James/open-source-reading-notes)：开源项目阅读笔记和工程观察。
