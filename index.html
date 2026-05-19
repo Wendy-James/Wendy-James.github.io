@@ -3,79 +3,165 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Wendy-James | Frontend / Full-stack Portfolio</title>
+    <title>Wendy / 詹文婷 | AI Engineering Portfolio</title>
     <link rel="icon" href="https://github.com/Wendy-James.png">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="site-header">
       <nav class="nav" aria-label="主导航">
-        <a class="brand" href="https://github.com/Wendy-James">Wendy-James</a>
+        <a class="brand" href="https://github.com/Wendy-James">Wendy / 詹文婷</a>
         <div class="links">
           <a href="#projects">Projects</a>
+          <a href="#research">Research</a>
           <a href="#reading">Reading</a>
-          <a href="#skills">Skills</a>
           <a href="https://github.com/Wendy-James">GitHub</a>
         </div>
       </nav>
+
       <section class="hero">
         <img class="avatar" src="https://github.com/Wendy-James.png" alt="Wendy-James GitHub 头像">
-        <p class="eyebrow">Frontend / Full-stack / AI Apps</p>
-        <h1>Wendy-James</h1>
-        <p class="intro">记录前端工程、全栈应用、AI 知识助手和 Python 自动化实践，重点关注清晰界面、稳定流程和可验证的工程结果。</p>
+        <p class="eyebrow">AI / Backend / Document Intelligence</p>
+        <h1>Wendy / 詹文婷</h1>
+        <p class="intro">信息与计算科学本科，数学学院背景。关注把岗位文本、非结构化文档、业务流程和模型能力整理成可运行的软件系统：后端接口、LLM 工作流、文档问答界面、自动化流程，以及围绕 dry-run、安全闸和人工审核的工程化落地。</p>
         <div class="actions">
-          <a class="primary" href="https://github.com/Wendy-James?tab=repositories">GitHub Repos</a>
-          <a class="secondary" href="#projects">Featured Work</a>
+          <a class="primary" href="#projects">代表项目</a>
+          <a class="secondary" href="https://github.com/Wendy-James?tab=repositories">GitHub Repos</a>
         </div>
       </section>
     </header>
 
     <main>
+      <section class="section focus" id="focus">
+        <div class="section-heading">
+          <p class="eyebrow">Engineering Focus</p>
+          <h2>当前主线</h2>
+        </div>
+        <div class="focus-grid">
+          <article>
+            <h3>LLM Applications</h3>
+            <p>JD 解析、简历生成、AI 面试、聊天状态、输出约束和人工确认。</p>
+          </article>
+          <article>
+            <h3>Document Intelligence</h3>
+            <p>资料上传、字段抽取、文档问答、证据片段和非结构化信息整理。</p>
+          </article>
+          <article>
+            <h3>Backend Workflow</h3>
+            <p>任务编排、文件处理、接口边界、dry-run、安全检查和本地自动化测试。</p>
+          </article>
+          <article>
+            <h3>Research Foundation</h3>
+            <p>数学建模、适应性结构化建模、优化问题和智能交通场景分析。</p>
+          </article>
+        </div>
+      </section>
+
       <section class="section" id="projects">
         <div class="section-heading">
           <p class="eyebrow">Featured Work</p>
           <h2>代表项目</h2>
         </div>
         <div class="project-grid">
+          <article class="project project-wide">
+            <p class="project-type">Backend Workflow / Automation</p>
+            <h3>外贸全品类获客助手 / AI B2B Outreach Workbench</h3>
+            <p>本地 Python 人工审核工作台，围绕候选客户整理、邮件草稿、dry-run、安全闸、人工审核、回信分类和匿名 RFQ 做流程验证。</p>
+            <ul class="compact-list">
+              <li>Campaign, lead research, scoring and draft generation</li>
+              <li>READY_TO_SEND gate, blacklist / unsubscribe blocking and domain limits</li>
+              <li>Reply triage, supplier RFQ anonymization and local automated safety tests</li>
+            </ul>
+            <div class="tags">
+              <span>Python</span>
+              <span>Workflow</span>
+              <span>Safety Gates</span>
+              <span>Human Review</span>
+            </div>
+            <a href="https://github.com/Wendy-James/waimao-quanpinlei-huoke-zhushou">打开仓库</a>
+          </article>
+
           <article class="project">
-            <h3>MAS 创作者后台管理系统</h3>
-            <p>Vue 2 + Element UI 管理后台，覆盖登录、角色选择、Token 请求拦截、路由组织、CRUD 模块和图表组件。</p>
+            <p class="project-type">AI Application / LLM Workflow</p>
+            <h3>AI 求职、面试、JD 解析与简历生成系统</h3>
+            <p>围绕岗位描述解析、个人经历结构化、简历草稿生成和模拟问答练习，拆分为文本解析、字段抽取、模板生成、交互流程和人工确认环节。</p>
+            <div class="tags">
+              <span>LLM App</span>
+              <span>JD Parsing</span>
+              <span>Resume</span>
+            </div>
+            <a href="https://github.com/Wendy-James">查看 GitHub</a>
+          </article>
+
+          <article class="project">
+            <p class="project-type">Document Intelligence / Research</p>
+            <h3>文档结构化需求的适应性模型研究</h3>
+            <p>省级项目负责人经历。关注多场景下文档字段、结构和需求表达差异，整理更可迁移的结构化建模方法和验证思路。</p>
+            <div class="tags">
+              <span>Project Lead</span>
+              <span>Structuring</span>
+              <span>Modeling</span>
+            </div>
+            <a href="https://github.com/Wendy-James">查看 GitHub</a>
+          </article>
+
+          <article class="project">
+            <p class="project-type">LLM UI / API Contract</p>
+            <h3>AI 知识助手前端原型</h3>
+            <p>文档问答场景的前端原型，包含文件选择、聊天交互、<code>POST /upload</code> 与 <code>POST /ask</code> 接口约定；后端和模型服务需另行接入。</p>
+            <div class="tags">
+              <span>JavaScript</span>
+              <span>Fetch API</span>
+              <span>QA Prototype</span>
+            </div>
+            <a href="https://github.com/Wendy-James/ai-zhishi-zhushou">打开仓库</a>
+          </article>
+
+          <article class="project">
+            <p class="project-type">Admin System / Frontend Engineering</p>
+            <h3>Vue 2 Admin Dashboard Practice</h3>
+            <p>Vue 2 + Element UI 管理后台练习，覆盖登录、角色菜单、Token 请求拦截、路由组织、表格/表单 CRUD 页面和基础图表组件。</p>
             <div class="tags">
               <span>Vue 2</span>
               <span>Element UI</span>
               <span>Axios</span>
+              <span>CRUD</span>
             </div>
             <a href="https://github.com/Wendy-James/mas-chuangzuozhe-houtai">打开仓库</a>
           </article>
+
           <article class="project">
-            <h3>AI 知识助手单页演示</h3>
-            <p>面向文档问答场景的前端原型，包含资料上传、聊天问答、参考资料展示位和后端接口约定。</p>
+            <p class="project-type">Optimization Research</p>
+            <h3>5G 网络切片与智能交通性能优化研究</h3>
+            <p>面向智能交通场景，分析低时延、高可靠、带宽分配、资源隔离和移动性等需求下的网络切片优化策略。</p>
             <div class="tags">
-              <span>JavaScript</span>
-              <span>Fetch API</span>
-              <span>AI UI</span>
+              <span>Optimization</span>
+              <span>5G Slicing</span>
+              <span>ITS</span>
             </div>
-            <a href="https://github.com/Wendy-James/ai-zhishi-zhushou">打开仓库</a>
+            <a href="https://github.com/Wendy-James">查看 GitHub</a>
           </article>
-          <article class="project">
-            <h3>外贸全品类获客助手</h3>
-            <p>私有 Python 自动化项目，覆盖 Campaign、客户研究评分、邮件 dry-run、安全合规检测、回信识别和测试闭环。</p>
-            <div class="tags">
-              <span>Python</span>
-              <span>Workflow</span>
-              <span>pytest</span>
-            </div>
-            <a href="https://github.com/Wendy-James">项目摘要</a>
+        </div>
+      </section>
+
+      <section class="section research" id="research">
+        <div class="section-heading">
+          <p class="eyebrow">Research Experience</p>
+          <h2>研究与实验训练</h2>
+        </div>
+        <p class="section-copy">把研究经历作为工程判断的训练：阅读问题背景，拆解实验流程，记录假设、数据、结果和限制，并把可复用的方法沉淀到项目实现中。</p>
+        <div class="research-list">
+          <article>
+            <h3>Document Intelligence</h3>
+            <p>关注非结构化资料如何被切分、抽取、引用和验证，重点记录信息组织、答案依据和用户可理解性。</p>
           </article>
-          <article class="project">
-            <h3>苹果风电商练习站</h3>
-            <p>静态电商页面练习，包含商品数据渲染、搜索入口、分类入口和基础交互，同时保留 Python 入门脚本。</p>
-            <div class="tags">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </div>
-            <a href="https://github.com/Wendy-James/pingguofeng-dianshang-lianxi-zhan">打开仓库</a>
+          <article>
+            <h3>AI Engineering Method</h3>
+            <p>关注模型能力如何与真实业务流程连接，包括接口边界、失败状态、人工确认、安全闸和可测试性。</p>
+          </article>
+          <article>
+            <h3>Network Optimization</h3>
+            <p>关注智能交通场景下的服务需求拆解、网络资源隔离、QoS 约束和性能优化策略表达。</p>
           </article>
         </div>
       </section>
@@ -85,51 +171,29 @@
           <p class="eyebrow">Open Source Reading</p>
           <h2>开源项目阅读</h2>
         </div>
-        <p class="section-copy">这些项目作为工程参照和阅读对象，相关记录会沉淀到 <a href="https://github.com/Wendy-James/open-source-reading-notes">open-source-reading-notes</a>。</p>
+        <p class="section-copy">开源阅读用于校准工程判断：看架构边界、API 设计、测试方式和文档组织。相关记录沉淀到 <a href="https://github.com/Wendy-James/open-source-reading-notes">open-source-reading-notes</a>。</p>
         <div class="reading-grid">
           <article class="reading-item">
-            <a href="https://github.com/vuejs/core">vuejs/core</a>
-            <p>关注响应式系统、组件运行时、编译器和 TypeScript 代码组织。</p>
+            <h3>Frontend Runtime</h3>
+            <p><a href="https://github.com/vuejs/core">vuejs/core</a>：响应式系统、组件运行时、编译器结构。</p>
+            <p><a href="https://github.com/microsoft/TypeScript">TypeScript</a>：类型推导、语言服务、编译器工程。</p>
           </article>
           <article class="reading-item">
-            <a href="https://github.com/element-plus/element-plus">element-plus</a>
-            <p>学习企业级组件库的表单、表格、主题变量和组件 API 设计。</p>
+            <h3>UI Systems</h3>
+            <p><a href="https://github.com/element-plus/element-plus">element-plus</a>：组件 API、表单表格、主题变量。</p>
+            <p><a href="https://github.com/ant-design/ant-design">ant-design</a>：复杂组件交互、设计系统、文档组织。</p>
           </article>
           <article class="reading-item">
-            <a href="https://github.com/ant-design/ant-design">ant-design</a>
-            <p>对照设计系统、复杂组件交互、文档组织和测试方式。</p>
-          </article>
-          <article class="reading-item">
-            <a href="https://github.com/vercel/next.js">next.js</a>
-            <p>观察路由、渲染模式、服务端能力、构建流程和开发体验。</p>
-          </article>
-          <article class="reading-item">
-            <a href="https://github.com/fastapi/fastapi">fastapi</a>
-            <p>学习 OpenAPI、数据校验、异步接口和自动文档生成。</p>
-          </article>
-          <article class="reading-item">
-            <a href="https://github.com/microsoft/TypeScript">TypeScript</a>
-            <p>理解类型推导、编译器结构、语言服务和工程化约束。</p>
+            <h3>Backend References</h3>
+            <p><a href="https://github.com/fastapi/fastapi">fastapi</a>：OpenAPI、数据校验、异步接口、自动文档。</p>
+            <p><a href="https://github.com/vercel/next.js">next.js</a>：路由、渲染模式、服务端能力、构建体验。</p>
           </article>
         </div>
-      </section>
-
-      <section class="section skills" id="skills">
-        <div>
-          <p class="eyebrow">Engineering Focus</p>
-          <h2>持续打磨的工程能力</h2>
-        </div>
-        <ul class="focus-list">
-          <li>后台系统的路由、菜单、登录态、Token 请求拦截和业务模块拆分。</li>
-          <li>文档上传与问答产品的前后端接口边界、聊天交互和参考资料展示。</li>
-          <li>自动化工作流里的 dry-run、安全闸、隐私保护和测试覆盖。</li>
-          <li>把学习项目整理成可运行、可复盘、可持续迭代的工程作品。</li>
-        </ul>
       </section>
     </main>
 
     <footer>
-      <span>基于 GitHub Pages 构建</span>
+      <span>Based on GitHub Pages</span>
       <a href="https://github.com/Wendy-James">github.com/Wendy-James</a>
     </footer>
   </body>

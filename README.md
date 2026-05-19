@@ -1,6 +1,6 @@
 # Wendy-James 技术作品集
 
-这是 Wendy-James 的 GitHub Pages 技术作品集，用来集中展示前端工程、全栈应用、Python 自动化和 AI 应用原型项目。
+这是 Wendy / 詹文婷的 GitHub Pages 技术作品集，用来集中展示 AI Engineering、Backend Development、LLM Applications、Document Intelligence 相关项目与工程证据。
 
 访问地址：
 
@@ -10,25 +10,24 @@ https://Wendy-James.github.io/
 
 ## 页面内容
 
-- `index.html`：作品集首页，包含技术定位、代表项目、开源阅读和仓库链接。
+- `index.html`：作品集首页，包含技术定位、代表项目、研究经历、开源阅读和工程能力说明。
 - `styles.css`：页面样式，负责响应式布局、项目卡片、技术标签和基础视觉风格。
 
 ## 精选项目
 
-- [MAS 创作者后台管理系统](https://github.com/Wendy-James/mas-chuangzuozhe-houtai)
-- [AI 知识助手单页演示](https://github.com/Wendy-James/ai-zhishi-zhushou)
-- 外贸全品类获客助手（私有项目）
-- [苹果风电商练习站](https://github.com/Wendy-James/pingguofeng-dianshang-lianxi-zhan)
+- [外贸全品类获客助手 / AI B2B Outreach Workbench](https://github.com/Wendy-James/waimao-quanpinlei-huoke-zhushou)：Python 本地人工审核工作台，覆盖 workflow、dry-run、安全闸、隐私脱敏和本地自动化安全测试。
+- 研究与项目经历：AI 求职辅助、文档智能省级项目、5G 网络切片智能交通优化研究，作为经历说明呈现，不伪装成公开源码仓库。
+- [AI 知识助手单页演示](https://github.com/Wendy-James/ai-zhishi-zhushou)：文档上传 + 聊天问答前端原型，预留 `POST /upload` 与 `POST /ask` 接口约定。
+- [Vue 2 Admin Dashboard Practice](https://github.com/Wendy-James/mas-chuangzuozhe-houtai)：Vue 2 + Element UI 后台管理系统练习。
+- [open-source-reading-notes](https://github.com/Wendy-James/open-source-reading-notes)：开源项目阅读笔记和工程观察。
 
-## 开源阅读
+## 求职定位
 
-- [open-source-reading-notes](https://github.com/Wendy-James/open-source-reading-notes)
-- [vuejs/core](https://github.com/vuejs/core)
-- [element-plus/element-plus](https://github.com/element-plus/element-plus)
-- [ant-design/ant-design](https://github.com/ant-design/ant-design)
-- [vercel/next.js](https://github.com/vercel/next.js)
-- [fastapi/fastapi](https://github.com/fastapi/fastapi)
-- [microsoft/TypeScript](https://github.com/microsoft/TypeScript)
+- AI Engineer Intern
+- Backend Engineer Intern
+- LLM Application Engineer
+- Software Engineer Intern
+- Data / Algorithm related intern
 
 ## 更新方式
 
