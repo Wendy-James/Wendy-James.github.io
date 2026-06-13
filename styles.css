@@ -454,6 +454,19 @@ footer {
   box-shadow: var(--shadow);
 }
 
+.positioning-note {
+  margin-top: 20px;
+  padding: 16px 18px;
+  color: #24415f;
+  background: rgba(20, 87, 217, 0.07);
+  border: 1px solid rgba(20, 87, 217, 0.2);
+  border-radius: 8px;
+}
+
+.positioning-note strong {
+  color: var(--blue);
+}
+
 .project-wide {
   grid-column: span 2;
 }

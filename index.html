@@ -23,7 +23,7 @@
         <img class="avatar" src="https://github.com/Wendy-James.png" alt="Wendy-James GitHub 头像">
         <p class="eyebrow">Recommendation · Retrieval · Ranking · Multimodal Search</p>
         <h1>推荐算法 / 搜索召回 / 内容理解</h1>
-        <p class="intro">面向算法实习的 GitHub 证据链主页：主线收敛到短视频推荐、Two-Tower 召回、Faiss 检索、CLIP 图文匹配、离线评测、实验表和 badcase 复盘。这里不再把 Backend / Document Intelligence 放在第一屏。</p>
+        <p class="intro">面向大厂算法实习的 GitHub 证据链主页：主线收敛到短视频推荐、搜索召回、召回排序评测和内容理解检索。每个核心仓库都对应简历里的具体项目，并提供 schema、训练/评测脚本、实验 CSV、badcase 和面试安全边界。</p>
         <div class="actions">
           <a class="primary" href="#projects">查看算法证据链</a>
           <a class="secondary" href="https://github.com/Wendy-James?tab=repositories">GitHub Repositories</a>
@@ -55,6 +55,9 @@
             <p>BM25 + Dense + Reranker、Recall@K、MRR、引用命中率，只作为检索评测能力补充。</p>
           </article>
         </div>
+        <div class="positioning-note">
+          <strong>面试讲法：</strong>最核心项目讲短视频推荐，电商图文检索作为内容理解补充，RAG 只证明检索评测和证据引用能力；不把自己包装成 CV、RAG、推荐、大模型全都会。
+        </div>
       </section>
 
       <section class="section" id="projects">
@@ -68,9 +71,10 @@
             <h3>short-video-recsys-reproduce</h3>
             <p>短视频推荐离线复现：公开短视频推荐字段口径、7 天训练 / 1 天验证时间切分、Two-Tower 召回、Faiss IndexFlatIP、Recall@50 / NDCG@50、长尾 Recall@50、泄漏检查和 badcase 复盘。</p>
             <ul class="compact-list">
-              <li>Evidence: README, data_schema.md, experiments.csv, badcases.csv</li>
+              <li>Evidence: README, data_schema.md, experiments/metrics.csv, experiments/ablation.csv, badcases/badcase_samples.csv</li>
               <li>Core metrics: Recall@50 0.112 -> 0.126, NDCG@50 0.071 -> 0.079</li>
               <li>Interview focus: user tower, item tower, negative sampling, time split, Faiss</li>
+              <li>Boundary: public-field pseudo schema, offline reproduction, no private data or online A/B claim</li>
             </ul>
             <div class="tags">
               <span>Two-Tower</span>
@@ -85,6 +89,11 @@
             <p class="project-type">E-commerce / Multimodal Retrieval</p>
             <h3>ecommerce-multimodal-retrieval</h3>
             <p>电商商品图文检索证据链：Chinese-CLIP / OpenCLIP 双塔、hard negative、SKU 属性冲突、OCR 营销词、Faiss top-k 评测、阈值表和高分误召 badcase。</p>
+            <ul class="compact-list">
+              <li>Evidence: data_schema.md, experiments.csv, badcases.csv, scripts/evaluate_retrieval.py</li>
+              <li>Interview focus: InfoNCE, hard negative, false-positive buckets, threshold-score table</li>
+              <li>Boundary: offline review/evaluation set, not full online owner</li>
+            </ul>
             <div class="tags">
               <span>CLIP</span>
               <span>Hard Negative</span>
@@ -95,20 +104,29 @@
 
           <article class="project">
             <p class="project-type">Retrieval Evaluation / Supporting</p>
-            <h3>hybrid-rag-lab</h3>
-            <p>辅助项目：BM25 + Dense + Reranker 检索评测、chunk 对比、Recall@K / MRR / 引用命中率，用于补充检索评估和证据引用能力。</p>
+            <h3>llm-rag-system</h3>
+            <p>辅助项目：岗位知识库 RAG 检索评测，BM25 + Dense + Reranker、chunk 对比、Recall@5 / MRR / 引用命中率，用于补充检索评估和证据引用能力。</p>
+            <ul class="compact-list">
+              <li>Evidence: docs/data_schema.md, experiments/retrieval_metrics.csv, chunk_size_ablation.csv, badcases/error_analysis.csv</li>
+              <li>Core metrics: Recall@5 0.71 -> 0.77 with reranking, unsupported answer rate 0.13 -> 0.09</li>
+              <li>Boundary: support project only, not large-model training</li>
+            </ul>
             <div class="tags">
               <span>BM25</span>
               <span>Reranker</span>
               <span>MRR</span>
             </div>
-            <a href="https://github.com/Wendy-James/hybrid-rag-lab">Open repository</a>
+            <a href="https://github.com/Wendy-James/llm-rag-system">Open repository</a>
           </article>
 
           <article class="project">
             <p class="project-type">Ranking Fundamentals / Supporting</p>
             <h3>ctr-ranking-lab</h3>
             <p>推荐排序补充练习：CTR 特征工程、AUC / LogLoss、特征交叉、离线评估和实验记录，用于支撑推荐/搜索排序基础。</p>
+            <ul class="compact-list">
+              <li>Evidence: features, metrics, ranking baseline, experiment tracking</li>
+              <li>Boundary: fundamentals repo, not the main resume project</li>
+            </ul>
             <div class="tags">
               <span>CTR</span>
               <span>AUC</span>
@@ -124,7 +142,7 @@
           <p class="eyebrow">Supporting Work</p>
           <h2>旧工程项目降权：只作工程能力补充</h2>
         </div>
-        <p class="section-copy">这些项目不再作为主页第一主线，只用于说明基础工程实现、文档组织和界面原型能力。算法岗面试时主讲短视频推荐和商品图文检索。</p>
+        <p class="section-copy">这些项目不再作为主页第一主线，只用于说明基础工程实现、文档组织和界面原型能力。算法岗面试时主讲短视频推荐，商品图文检索作为第二证据，RAG 作为检索评测补充。</p>
         <div class="research-list">
           <article>
             <h3>AI Career / JD Workflow</h3>
