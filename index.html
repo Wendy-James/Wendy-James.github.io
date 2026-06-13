@@ -21,9 +21,14 @@
 
       <section class="hero">
         <img class="avatar" src="https://github.com/Wendy-James.png" alt="Wendy-James GitHub 头像">
-        <p class="eyebrow">Recommendation · Retrieval · Ranking · Multimodal Search</p>
-        <h1>推荐算法 / 搜索召回 / 内容理解</h1>
-        <p class="intro">面向大厂算法实习的 GitHub 证据链主页：主线收敛到短视频推荐、搜索召回、召回排序评测和内容理解检索。每个核心仓库都对应简历里的具体项目，并提供 schema、训练/评测脚本、实验 CSV、badcase 和面试安全边界。</p>
+        <p class="eyebrow">Wendy Zhan / 詹文婷</p>
+        <h1>Recommendation Algorithm Intern | Search & Retrieval | Content Understanding</h1>
+        <div class="hero-facts">
+          <span>HFUT 211 · Information and Computing Science</span>
+          <span>Incoming MSc Computer Science Admit</span>
+          <span>Focus: Recommendation / Retrieval / Ranking / Offline Evaluation</span>
+        </div>
+        <p class="intro">面向大厂算法实习的 GitHub 证据链主页：核心顺序是短视频推荐、 电商图文检索、RAG 检索评测和 CTR 排序基础。其他 Agent、Document、Frontend 项目全部降权到后面，只作为工程能力补充。</p>
         <div class="actions">
           <a class="primary" href="#projects">查看算法证据链</a>
           <a class="secondary" href="https://github.com/Wendy-James?tab=repositories">GitHub Repositories</a>
@@ -63,13 +68,13 @@
       <section class="section" id="projects">
         <div class="section-heading">
           <p class="eyebrow">Algorithm Evidence Chain</p>
-          <h2>推荐 / 检索主线项目</h2>
+          <h2>Featured Projects</h2>
         </div>
         <div class="project-grid">
           <article class="project project-wide">
             <p class="project-type">ByteDance-oriented / Recommendation Retrieval</p>
             <h3>short-video-recsys-reproduce</h3>
-            <p>短视频推荐离线复现：公开短视频推荐字段口径、7 天训练 / 1 天验证时间切分、Two-Tower 召回、Faiss IndexFlatIP、Recall@50 / NDCG@50、长尾 Recall@50、泄漏检查和 badcase 复盘。</p>
+            <p>Two-Tower Recall / Faiss / Time Split / Recall@50 / NDCG@50。短视频推荐离线复现：公开短视频推荐字段口径、7 天训练 / 1 天验证时间切分、Two-Tower 召回、Faiss IndexFlatIP、长尾 Recall@50、泄漏检查和 badcase 复盘。</p>
             <ul class="compact-list">
               <li>Evidence: README, data_schema.md, experiments/metrics.csv, experiments/ablation.csv, badcases/badcase_samples.csv</li>
               <li>Core metrics: Recall@50 0.112 -> 0.126, NDCG@50 0.071 -> 0.079</li>
@@ -88,7 +93,7 @@
           <article class="project">
             <p class="project-type">E-commerce / Multimodal Retrieval</p>
             <h3>ecommerce-multimodal-retrieval</h3>
-            <p>电商商品图文检索证据链：Chinese-CLIP / OpenCLIP 双塔、hard negative、SKU 属性冲突、OCR 营销词、Faiss top-k 评测、阈值表和高分误召 badcase。</p>
+            <p>CLIP / Hard Negative / SKU Conflict / Faiss / Badcase Analysis。电商商品图文检索证据链：Chinese-CLIP / OpenCLIP 双塔、SKU 属性冲突、OCR 营销词、Faiss top-k 评测、阈值表和高分误召 badcase。</p>
             <ul class="compact-list">
               <li>Evidence: data_schema.md, experiments.csv, badcases.csv, scripts/evaluate_retrieval.py</li>
               <li>Interview focus: InfoNCE, hard negative, false-positive buckets, threshold-score table</li>
@@ -105,7 +110,7 @@
           <article class="project">
             <p class="project-type">Retrieval Evaluation / Supporting</p>
             <h3>llm-rag-system</h3>
-            <p>辅助项目：岗位知识库 RAG 检索评测，BM25 + Dense + Reranker、chunk 对比、Recall@5 / MRR / 引用命中率，用于补充检索评估和证据引用能力。</p>
+            <p>BM25 / Dense Retrieval / Reranker / Recall@K / Citation Evaluation。辅助项目：岗位知识库 RAG 检索评测，chunk 对比、Recall@5 / MRR / 引用命中率，用于补充检索评估和证据引用能力。</p>
             <ul class="compact-list">
               <li>Evidence: docs/data_schema.md, experiments/retrieval_metrics.csv, chunk_size_ablation.csv, badcases/error_analysis.csv</li>
               <li>Core metrics: Recall@5 0.71 -> 0.77 with reranking, unsupported answer rate 0.13 -> 0.09</li>
@@ -121,8 +126,8 @@
 
           <article class="project">
             <p class="project-type">Ranking Fundamentals / Supporting</p>
-            <h3>ctr-ranking-lab</h3>
-            <p>推荐排序补充练习：CTR 特征工程、AUC / LogLoss、特征交叉、离线评估和实验记录，用于支撑推荐/搜索排序基础。</p>
+            <h3>recommendation-system</h3>
+            <p>CTR Ranking Lab / Feature Crossing / AUC / LogLoss / nDCG。推荐排序补充练习：CTR 特征工程、特征交叉、离线评估和实验记录，用于支撑推荐/搜索排序基础。</p>
             <ul class="compact-list">
               <li>Evidence: features, metrics, ranking baseline, experiment tracking</li>
               <li>Boundary: fundamentals repo, not the main resume project</li>
@@ -132,7 +137,7 @@
               <span>AUC</span>
               <span>Feature Crossing</span>
             </div>
-            <a href="https://github.com/Wendy-James/ctr-ranking-lab">Open repository</a>
+            <a href="https://github.com/Wendy-James/recommendation-system">Open repository</a>
           </article>
         </div>
       </section>

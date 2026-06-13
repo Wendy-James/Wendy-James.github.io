@@ -129,6 +129,20 @@ h1 {
   font-size: 1.12rem;
 }
 
+.hero-facts {
+  display: grid;
+  gap: 6px;
+  max-width: 760px;
+  margin: 0 0 18px;
+  color: #24415f;
+  font-size: 1.02rem;
+  font-weight: 750;
+}
+
+.hero-facts span {
+  display: block;
+}
+
 .role-row {
   display: flex;
   flex-wrap: wrap;
