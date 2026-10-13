@@ -1,162 +1,139 @@
 <!doctype html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Wendy / 詹文婷 | Recommendation & Retrieval Portfolio</title>
-    <link rel="icon" href="https://github.com/Wendy-James.png">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <header class="site-header">
-      <nav class="nav" aria-label="主导航">
-        <a class="brand" href="https://github.com/Wendy-James">Wendy / 詹文婷</a>
-        <div class="links">
-          <a href="#projects">Evidence</a>
-          <a href="#focus">Focus</a>
-          <a href="#supporting">Supporting</a>
-          <a href="https://github.com/Wendy-James">GitHub</a>
-        </div>
-      </nav>
-
-      <section class="hero">
-        <img class="avatar" src="https://github.com/Wendy-James.png" alt="Wendy-James GitHub 头像">
-        <p class="eyebrow">Wendy Zhan / 詹文婷</p>
-        <h1>Recommendation Algorithm Intern | Search & Retrieval | Content Understanding</h1>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Wendy Zhan | Foundation-model training, LLM post-training research and reproducible ML engineering.">
+  <title>Wendy Zhan | Foundation Models & ML Research Engineering</title>
+  <link rel="icon" href="https://github.com/Wendy-James.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="主导航">
+      <a class="brand" href="#top">Wendy Zhan / 詹文婷</a>
+      <div class="links">
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#approach">Approach</a>
+        <a href="https://github.com/Wendy-James">GitHub ↗</a>
+      </div>
+    </nav>
+    <section class="hero" id="top">
+      <div>
+        <img class="avatar" src="https://github.com/Wendy-James.png" alt="Wendy 的 GitHub 头像">
+        <p class="eyebrow">Foundation Models · Research Engineering</p>
+        <h1>Wendy Zhan</h1>
         <div class="hero-facts">
-          <span>HFUT 211 · Information and Computing Science</span>
-          <span>Incoming MSc Computer Science Admit</span>
-          <span>Focus: Recommendation / Retrieval / Ranking / Offline Evaluation</span>
+          <span>基础模型训练 · LLM 后训练 · ML Systems</span>
+          <span>合肥工业大学 · 信息与计算科学学士（2026）</span>
         </div>
-        <p class="intro">面向大厂算法实习的 GitHub 证据链主页：核心只保留短视频推荐、电商图文检索和 RAG 检索评测。CTR 排序基础、Agent、Document、Frontend 项目全部降权到后面，只作为工程能力补充。</p>
+        <p class="intro">我关注模型如何被训练、评估与改进。从基础组件实现到严格验证与实验对照，尽量让每一项技术结论都有可复查的代码、指标和边界说明。</p>
+        <div class="role-row">
+          <span>Foundation Models</span><span>Evaluation</span><span>Reproducibility</span><span>Post-training</span>
+        </div>
         <div class="actions">
-          <a class="primary" href="#projects">查看算法证据链</a>
-          <a class="secondary" href="https://github.com/Wendy-James?tab=repositories">GitHub Repositories</a>
+          <a class="primary" href="#research">Explore research</a>
+          <a class="secondary" href="https://github.com/Wendy-James">GitHub Profile ↗</a>
         </div>
-      </section>
-    </header>
-
-    <main>
-      <section class="section focus" id="focus">
-        <div class="section-heading">
-          <p class="eyebrow">Main Focus</p>
-          <h2>主线收敛：推荐召回排序，而不是全方向作品集</h2>
+      </div>
+      <aside class="hero-panel">
+        <h2>Current evidence</h2>
+        <ul>
+          <li>WendyFM：字节级 BPE Tokenizer 已完成，有测试与 benchmark</li>
+          <li>后训练研究：SFT 数据配方、验证与 RL trainability，仍在进行</li>
+          <li>工程能力：推荐召回、检索评估与多模态错误分析</li>
+          <li>坚持区分已完成成果、实验性结论与下一阶段计划</li>
+        </ul>
+      </aside>
+    </section>
+  </header>
+  <main>
+    <section class="section" id="research">
+      <div class="section-heading">
+        <p class="eyebrow">01 / Flagship</p>
+        <h2>研究与训练系统</h2>
+        <p>优先展示可验证的工作，而不是泛化的技术标签或尚未完成的宏大目标。</p>
+      </div>
+      <div class="case-list">
+        <article class="case-card highlight">
+          <p class="case-kicker">Milestone 1 complete · Open source</p>
+          <h3>WendyFM — Foundation-model training from first principles</h3>
+          <p class="case-summary">当前完成的里程碑是 byte-level BPE Tokenizer：确定性合并规则、多语言预分词、朴素与增量索引训练器及一致性验证。Decoder-only Transformer、预训练和 GPU profiling 为后续计划，尚未完成。</p>
+          <dl class="case-details">
+            <div><dt>English / CPU</dt><dd><strong>7.25×</strong> indexed vs. naive</dd></div>
+            <div><dt>Code / CPU</dt><dd><strong>4.55×</strong> indexed vs. naive</dd></div>
+            <div><dt>Chinese / CPU</dt><dd><strong>0.70×</strong> regression</dd></div>
+          </dl>
+          <p class="case-summary">这些数字来自小规模合成语料，不能代表生产吞吐。优化版本在中文语料上回退，且测得的 Python 内存分配更高；完整局限性和测量方法见技术报告。</p>
+          <div class="case-links">
+            <a href="https://github.com/Wendy-James/wendy-foundation-model">Source &amp; README ↗</a>
+            <a href="https://github.com/Wendy-James/wendy-foundation-model/blob/main/report/tokenizer.md">Technical report ↗</a>
+            <a href="https://github.com/Wendy-James/wendy-foundation-model/blob/main/benchmarks/tokenizer/results.csv">Benchmark CSV ↗</a>
+          </div>
+        </article>
+        <article class="case-card">
+          <p class="case-kicker">Work in progress · Private research</p>
+          <h3>LLM Post-training · Data Recipes &amp; RL Trainability</h3>
+          <p class="case-summary">围绕数学验证、难度剖析和后续的受控 SFT / RLVR 实验，研究数据选择与验证策略如何影响训练表现。研究仓库暂为私有；目前不宣称已完成 RL 训练、已发表论文或已有对外可复现结果。</p>
+          <div class="role-row"><span>SFT data</span><span>Verifier reliability</span><span>Difficulty profiling</span><span>RLVR (planned)</span></div>
+        </article>
+      </div>
+    </section>
+    <section class="section" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">02 / Supporting evidence</p>
+        <h2>公开工程项目</h2>
+        <p>从工业 ML 到检索评估：这些项目补充展示实验设计、数据口径和分析能力，不代表生产环境部署。</p>
+      </div>
+      <div class="project-grid">
+        <article class="project project-wide">
+          <p class="project-type">Recommendation · Offline reproduction</p>
+          <h3>Short-video recommendation</h3>
+          <p>Two-Tower 召回、时间切分、负采样、Faiss 风格检索、Recall@50/NDCG@50 与消融。公开版本基于伪造或脱敏数据；不主张真实线上 A/B 提升。</p>
+          <div class="tags"><span>Two-Tower</span><span>Temporal split</span><span>Ablation</span></div>
+          <a href="https://github.com/Wendy-James/short-video-recsys-reproduce">Open repository ↗</a>
+        </article>
+        <article class="project">
+          <p class="project-type">Multimodal retrieval</p>
+          <h3>E-commerce retrieval</h3>
+          <p>图文检索、难负样本、SKU 属性冲突、OCR 干扰与错误案例分析。</p>
+          <a href="https://github.com/Wendy-James/ecommerce-multimodal-retrieval">Open repository ↗</a>
+        </article>
+        <article class="project">
+          <p class="project-type">Retrieval evaluation</p>
+          <h3>RAG retrieval evaluation</h3>
+          <p>BM25、Dense Retrieval、重排、分块消融与引用质量评估；不是语言模型预训练项目。</p>
+          <a href="https://github.com/Wendy-James/llm-rag-system">Open repository ↗</a>
+        </article>
+      </div>
+    </section>
+    <section class="section" id="approach">
+      <div class="section-heading">
+        <p class="eyebrow">03 / Principles</p>
+        <h2>研究方法</h2>
+      </div>
+      <div class="focus-grid">
+        <article><h3>Correctness first</h3><p>先定义基线与测试，再做性能优化。结果必须能在明确环境下复核。</p></article>
+        <article><h3>Negative results matter</h3><p>保留性能回退、失败案例、局限性和解释，而不只展示最好的数字。</p></article>
+        <article><h3>Reuse open source</h3><p>优先借鉴高质量开源实现，核验许可、原作者与复现成本。</p></article>
+        <article><h3>Public-data boundary</h3><p>公开项目仅使用允许共享的代码与数据，不公开雇主内部资产、凭证或业务指标。</p></article>
+      </div>
+    </section>
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2>Research &amp; collaboration</h2>
+        <p>欢迎交流基础模型研究工程、训练系统、验证与评估。</p>
+        <div class="actions">
+          <a class="primary" href="mailto:1563887189@qq.com">Email Wendy</a>
+          <a class="secondary" href="https://github.com/Wendy-James">View GitHub ↗</a>
         </div>
-        <div class="focus-grid">
-          <article>
-            <h3>Recommendation Retrieval</h3>
-            <p>Two-Tower、DSSM、负采样、Faiss、Recall@K、NDCG@K、长尾召回和时间切分。</p>
-          </article>
-          <article>
-            <h3>Ranking & Evaluation</h3>
-            <p>AUC、LogLoss、特征交叉、消融实验、experiments.csv、随机切分泄漏检查。</p>
-          </article>
-          <article>
-            <h3>Content Understanding</h3>
-            <p>CLIP 双塔、商品图文匹配、SKU 冲突、OCR 营销词、hard negative 和 badcase 复盘。</p>
-          </article>
-          <article>
-            <h3>RAG as Support</h3>
-            <p>BM25 + Dense + Reranker、Recall@K、MRR、引用命中率，只作为检索评测能力补充。</p>
-          </article>
-        </div>
-        <div class="positioning-note">
-          <strong>面试讲法：</strong>最核心项目讲短视频推荐，电商图文检索作为内容理解补充，RAG 只证明检索评测和证据引用能力；不把自己包装成 CV、RAG、推荐、大模型全都会。
-        </div>
-      </section>
-
-      <section class="section" id="projects">
-        <div class="section-heading">
-          <p class="eyebrow">Algorithm Evidence Chain</p>
-          <h2>Featured Projects</h2>
-        </div>
-        <div class="project-grid">
-          <article class="project project-wide">
-            <p class="project-type">ByteDance-oriented / Recommendation Retrieval</p>
-            <h3>short-video-recsys-reproduce</h3>
-            <p>Two-Tower Recall / Faiss / Time Split / Recall@50 / NDCG@50。短视频推荐离线复现：公开短视频推荐字段口径、7 天训练 / 1 天验证时间切分、Two-Tower 召回、Faiss IndexFlatIP、长尾 Recall@50、泄漏检查和 badcase 复盘。</p>
-            <ul class="compact-list">
-              <li>Evidence: README, data_schema.md, experiments/metrics.csv, experiments/ablation.csv, badcases/badcase_samples.csv</li>
-              <li>Core metrics: Recall@50 0.112 -> 0.126, NDCG@50 0.071 -> 0.079</li>
-              <li>Interview focus: user tower, item tower, negative sampling, time split, Faiss</li>
-              <li>Boundary: public-field pseudo schema, offline reproduction, no private data or online A/B claim</li>
-            </ul>
-            <div class="tags">
-              <span>Two-Tower</span>
-              <span>Faiss</span>
-              <span>Recall@50</span>
-              <span>Time Split</span>
-            </div>
-            <a href="https://github.com/Wendy-James/short-video-recsys-reproduce">Open repository</a>
-          </article>
-
-          <article class="project">
-            <p class="project-type">E-commerce / Multimodal Retrieval</p>
-            <h3>ecommerce-multimodal-retrieval</h3>
-            <p>CLIP / Hard Negative / SKU Conflict / Faiss / Badcase Analysis。电商商品图文检索证据链：Chinese-CLIP / OpenCLIP 双塔、SKU 属性冲突、OCR 营销词、Faiss top-k 评测、阈值表和高分误召 badcase。</p>
-            <ul class="compact-list">
-              <li>Evidence: data_schema.md, experiments.csv, badcases.csv, scripts/evaluate_retrieval.py</li>
-              <li>Interview focus: InfoNCE, hard negative, false-positive buckets, threshold-score table</li>
-              <li>Boundary: offline review/evaluation set, not full online owner</li>
-            </ul>
-            <div class="tags">
-              <span>CLIP</span>
-              <span>Hard Negative</span>
-              <span>SKU Conflict</span>
-            </div>
-            <a href="https://github.com/Wendy-James/ecommerce-multimodal-retrieval">Open repository</a>
-          </article>
-
-          <article class="project">
-            <p class="project-type">Retrieval Evaluation / Supporting</p>
-            <h3>llm-rag-system</h3>
-            <p>BM25 / Dense Retrieval / Reranker / Recall@K / Citation Evaluation。辅助项目：岗位知识库 RAG 检索评测，chunk 对比、Recall@5 / MRR / 引用命中率，用于补充检索评估和证据引用能力。</p>
-            <ul class="compact-list">
-              <li>Evidence: docs/data_schema.md, experiments/retrieval_metrics.csv, chunk_size_ablation.csv, badcases/error_analysis.csv</li>
-              <li>Core metrics: Recall@5 0.71 -> 0.77 with reranking, unsupported answer rate 0.13 -> 0.09</li>
-              <li>Boundary: support project only, not large-model training</li>
-            </ul>
-            <div class="tags">
-              <span>BM25</span>
-              <span>Reranker</span>
-              <span>MRR</span>
-            </div>
-            <a href="https://github.com/Wendy-James/llm-rag-system">Open repository</a>
-          </article>
-
-        </div>
-      </section>
-
-      <section class="section research" id="supporting">
-        <div class="section-heading">
-          <p class="eyebrow">Supporting Work</p>
-          <h2>旧工程项目降权：只作工程能力补充</h2>
-        </div>
-        <p class="section-copy">这些项目不再作为主页第一主线，只用于说明基础工程实现、文档组织和界面原型能力。算法岗面试时主讲短视频推荐，商品图文检索作为第二证据，RAG 作为检索评测补充。</p>
-        <div class="research-list">
-          <article>
-            <h3>CTR Ranking Fundamentals</h3>
-            <p>recommendation-system 保留为 CTR / feature crossing / AUC / LogLoss / nDCG 基础练习仓库，不 pin，不作为核心简历项目主推。</p>
-          </article>
-          <article>
-            <h3>AI Career / JD Workflow</h3>
-            <p>JD 解析、简历生成和面试准备流程，可作为 LLM workflow 工程化补充，不作为算法主项目。</p>
-          </article>
-          <article>
-            <h3>Document Intelligence</h3>
-            <p>文档结构化和证据引用经验，作为 RAG 检索评测补充，不抢推荐/检索主线。</p>
-          </article>
-          <article>
-            <h3>Frontend / Admin Practice</h3>
-            <p>Vue 管理后台和单页原型用于展示基础工程能力，不作为算法证据链核心。</p>
-          </article>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <span>Based on GitHub Pages</span>
-      <a href="https://github.com/Wendy-James">github.com/Wendy-James</a>
-    </footer>
-  </body>
+      </div>
+    </section>
+  </main>
+  <footer class="section">
+    <p>© Wendy Zhan · Portfolio of verified public work. Updated 2026-10.</p>
+  </footer>
+</body>
 </html>
