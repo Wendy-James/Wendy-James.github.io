@@ -3,12 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f9f6f1">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Wendy — Foundation Models & Research Engineering">
+  <meta property="og:description" content="From first-principles model systems to reproducible experiments.">
+  <meta property="og:url" content="https://wendy-james.github.io/">
   <meta name="description" content="Wendy | Foundation-model training, LLM post-training research and reproducible ML engineering.">
   <title>Wendy | Foundation Models & ML Research Engineering</title>
   <link rel="icon" href="https://github.com/Wendy-James.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#research">跳转到研究项目</a>
   <header class="site-header">
     <nav class="nav" aria-label="主导航">
       <a class="brand" href="#top">Wendy</a>
@@ -21,9 +27,10 @@
     </nav>
     <section class="hero" id="top">
       <div>
-        <img class="avatar" src="https://github.com/Wendy-James.png" alt="Wendy 的 GitHub 头像">
+        <img class="avatar" src="https://github.com/Wendy-James.png" alt="Wendy 的 GitHub 个人头像（图片跟随 GitHub 账户设置）">
         <p class="eyebrow">Foundation Models · Research Engineering</p>
         <h1>Wendy</h1>
+        <p class="hero-motto">From code to <em>evidence.</em></p>
         <div class="hero-facts">
           <span>基础模型训练 · LLM 后训练 · ML Systems</span>
           <span>合肥工业大学 · 信息与计算科学学士（2026）</span>
@@ -63,6 +70,7 @@
           <dl class="case-details">
             <div><dt>English / CPU</dt><dd><strong>7.25×</strong> indexed vs. naive</dd></div>
             <div><dt>Code / CPU</dt><dd><strong>4.55×</strong> indexed vs. naive</dd></div>
+            <div><dt>Mixed / CPU</dt><dd><strong>4.57×</strong> indexed vs. naive</dd></div>
             <div><dt>Chinese / CPU</dt><dd><strong>0.70×</strong> regression</dd></div>
           </dl>
           <p class="case-summary">这些数字来自小规模合成语料，不能代表生产吞吐。优化版本在中文语料上回退，且测得的 Python 内存分配更高；完整局限性和测量方法见技术报告。</p>
