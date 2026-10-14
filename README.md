@@ -1,6 +1,6 @@
 # Wendy-James 技术作品集
 
-这是 Wendy / 詹文婷的 GitHub Pages 技术作品集，用来集中展示 AI Engineering、Backend Development、LLM Applications、Document Intelligence 相关项目与工程证据。
+这是 Wendy的 GitHub Pages 技术作品集，用来集中展示 AI Engineering、Backend Development、LLM Applications、Document Intelligence 相关项目与工程证据。
 
 访问地址：
 
