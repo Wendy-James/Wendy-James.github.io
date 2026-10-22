@@ -2,7 +2,7 @@
 
 Live portfolio: **https://wendy-james.github.io/**
 
-A warm editorial, mobile-friendly research portfolio featuring **publicly verifiable** work in foundation-model systems, post-training research, and offline ML evaluation.
+A warm editorial, mobile-friendly research portfolio featuring **publicly verifiable** work in foundation-model systems, post-training × agentic RL research questions, and offline ML evaluation. Personal education details and personal contact addresses are intentionally not published.
 
 ## Highlighted work
 
@@ -17,6 +17,6 @@ The tokenizer speedups are small **synthetic CPU tests**, including a negative C
 - `index.html`: semantic static HTML, selected work and direct evidence links
 - `styles.css`: responsive editorial visual system (cream, warm terracotta, serif/sans typography)
 
-GitHub Pages deploys from the configured branch. The portrait references the GitHub account avatar and will update after the user changes it, subject to caching.
+GitHub Pages deploys from the configured branch. The homepage uses a neutral typographic monogram instead of a personally identifying portrait.
 
 Publication policy: never put employer-owned code, internal metrics, datasets, credentials, or unreleased private research in the public site.
