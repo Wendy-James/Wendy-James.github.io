@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f9f6f1">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Wendy — Foundation Models & Research Engineering">
-  <meta property="og:description" content="From first-principles model systems to reproducible experiments.">
+  <meta property="og:title" content="Wendy — LLM Post-training × Agentic RL">
+  <meta property="og:description" content="Verifiable learning, tool-use evaluation, and reproducible foundation-model systems.">
   <meta property="og:url" content="https://wendy-james.github.io/">
-  <meta name="description" content="Wendy | Foundation-model training, LLM post-training research and reproducible ML engineering.">
-  <title>Wendy | Foundation Models & ML Research Engineering</title>
+  <meta name="description" content="Wendy | Research direction in LLM post-training, agentic reinforcement learning, verifiable rewards, and reproducible model-training systems.">
+  <title>Wendy | LLM Post-training × Agentic RL</title>
   <link rel="icon" href="https://github.com/Wendy-James.png">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -32,10 +32,10 @@
         <h1>Wendy</h1>
         <p class="hero-motto">From code to <em>evidence.</em></p>
         <div class="hero-facts">
-          <span>基础模型训练 · LLM 后训练 · ML Systems</span>
+          <span>LLM Post-training × Agentic RL · Foundation Model Systems</span>
           <span>Verifiable feedback · Tool use · Reproducible evaluation</span>
         </div>
-        <p class="intro">我关注语言模型如何通过可验证反馈、多步决策和工具交互得到改进。从训练组件到 Verifier 与评测协议，坚持用可检查的代码、指标和实验边界支持技术结论。</p>
+        <p class="intro">长期关注语言模型如何通过可靠奖励、多步决策与工具使用实现学习与泛化。当前以 Verifier、SFT-to-RL 实验设计和可复现训练系统为切入点：明确区分已验证成果、私有研究与计划中的 Agentic RL 实验。</p>
         <div class="role-row">
           <span>Post-training</span><span>Agentic RL</span><span>Evaluation</span><span>Training Systems</span>
         </div>
@@ -47,8 +47,8 @@
       <aside class="hero-panel">
         <h2>Current evidence</h2>
         <ul>
-          <li>WendyFM：字节级 BPE Tokenizer 已完成，有测试与 benchmark</li>
-          <li>后训练研究：Verifier、数据配方与 Agentic RL 问题，仍在进行</li>
+          <li>研究主线：Post-training × Agentic RL，重点是可靠奖励和工具交互</li>
+          <li>可核实成果：WendyFM Byte-level BPE，包含测试与 CPU benchmark</li>
           <li>工程能力：推荐召回、检索评估与多模态错误分析</li>
           <li>坚持区分已完成成果、实验性结论与下一阶段计划</li>
         </ul>
@@ -60,11 +60,17 @@
       <div class="section-heading">
         <p class="eyebrow">01 / Flagship</p>
         <h2>研究与训练系统</h2>
-        <p>优先展示可验证的工作，而不是泛化的技术标签或尚未完成的宏大目标。</p>
+        <p>以 Verifier、环境反馈和多步交互为长期研究方向，以真实可复现的工程成果证明方法和能力。</p>
       </div>
       <div class="case-list">
         <article class="case-card highlight">
-          <p class="case-kicker">Milestone 1 complete · Open source</p>
+          <p class="case-kicker">Primary research direction · In progress · Private</p>
+          <h3>LLM Post-training × Agentic RL — Verifiable Learning</h3>
+          <p class="case-summary">当前研究聚焦数学答案验证、Verifier 一致性、数据配方与受控 SFT-to-RL 实验设计。下一步研究路线：Verifier 可靠性 → 多步工具环境及轨迹级评测 → 受控 RLVR / Agentic RL 实验。仓库暂为私有；不宣称已完成 Agentic RL、验证过 RL 收益或发表论文。</p>
+          <div class="role-row"><span>SFT data</span><span>Verifier reliability</span><span>Reward design</span><span>Tool-use evaluation (planned)</span></div>
+        </article>
+        <article class="case-card">
+          <p class="case-kicker">Verified engineering milestone · Open source</p>
           <h3>WendyFM — Foundation-model training from first principles</h3>
           <p class="case-summary">当前完成的里程碑是 byte-level BPE Tokenizer：确定性合并规则、多语言预分词、朴素与增量索引训练器及一致性验证。Decoder-only Transformer 目前已有 <a href="https://github.com/Wendy-James/wendy-foundation-model/pull/24">待审核工程草稿 PR #24</a>，已完成隔离环境的 Toy CPU 测试，但尚未完成真实预训练、本人复核与 GPU profiling。</p>
           <dl class="case-details">
@@ -80,12 +86,6 @@
             <a href="https://github.com/Wendy-James/wendy-foundation-model/blob/main/benchmarks/tokenizer/results.csv">Benchmark CSV ↗</a>
           </div>
         </article>
-        <article class="case-card">
-          <p class="case-kicker">Work in progress · Private research</p>
-          <h3>LLM Post-training × Agentic RL — Verifiable Learning</h3>
-          <p class="case-summary">当前研究聚焦数学答案验证、Verifier 一致性、数据配方与受控 SFT-to-RL 实验设计；未来延伸到多步工具使用和交互式奖励。仓库暂为私有；尚不宣称已完成智能体 RL 训练、验证过 RL 收益或发表论文。</p>
-          <div class="role-row"><span>SFT data</span><span>Verifier reliability</span><span>Reward design</span><span>Tool-use evaluation (planned)</span></div>
-        </article>
       </div>
     </section>
     <section class="section" id="projects">
@@ -98,7 +98,7 @@
         <article class="project project-wide">
           <p class="project-type">Recommendation · Offline reproduction</p>
           <h3>Short-video recommendation</h3>
-          <p>Two-Tower 召回、时间切分、负采样、Faiss 风格检索、Recall@50/NDCG@50 与消融。公开版本基于伪造或脱敏数据；不主张真实线上 A/B 提升。</p>
+          <p>Two-Tower 召回、时间切分、负采样、Faiss 风格检索、Recall@50/NDCG@50 与消融。在仓库的模拟/匿名化数据与时间切分中，Recall@50 从 0.112 到 0.126（不同配置）；不代表真实线上 A/B 收益。</p>
           <div class="tags"><span>Two-Tower</span><span>Temporal split</span><span>Ablation</span></div>
           <a href="https://github.com/Wendy-James/short-video-recsys-reproduce">Open repository ↗</a>
         </article>
@@ -132,7 +132,7 @@
       <div class="section-heading">
         <p class="eyebrow">Contact</p>
         <h2>Research, code &amp; reproducibility</h2>
-        <p>此页面仅展示可公开验证的研究与工程成果。联系邮箱将在独立技术邮箱准备好后开放。</p>
+        <p>此页面仅展示可公开核实的工程证据与明确标记的研究方向；不展示身份信息、公司内部资产或未经复核的实验结论。</p>
         <div class="actions">
           <a class="primary" href="#projects">Explore projects</a>
           <a class="secondary" href="https://github.com/Wendy-James">View GitHub ↗</a>
@@ -141,7 +141,7 @@
     </section>
   </main>
   <footer class="section">
-    <p>© Wendy · Portfolio of verified public work. Updated 2026-10.</p>
+    <p>© Wendy · Verifiable public work. Evidence reviewed 2026-10-22. Research plans are not completed results.</p>
   </footer>
 </body>
 </html>
