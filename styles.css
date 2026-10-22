@@ -27,6 +27,7 @@ p, h1, h2, h3, dl, dd { margin-top: 0 }
 .links a:hover, .case-links a:hover, .project a:hover, footer a:hover { color: var(--accent) }
 .hero { width: min(1100px, calc(100% - 48px)); margin: auto; padding: 95px 0 102px; display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(285px, .72fr); gap: 65px; align-items: center }
 .avatar { width: 120px; height: 120px; object-fit: cover; border: 6px solid #fffaf3; border-radius: 50%; box-shadow: 0 15px 40px rgba(82,57,38,.17); margin: 0 0 27px }
+.avatar-monogram { display: grid; place-items: center; background: #efe4da; color: var(--accent-deep); font: italic 52px/1 var(--serif) }
 .eyebrow, .case-kicker, .project-type { color: var(--accent); font-size: 11px; font-weight: 750; letter-spacing: .15em; text-transform: uppercase }
 .eyebrow { margin-bottom: 20px }
 .hero h1 { font-family: var(--serif); font-size: clamp(64px, 8.5vw, 105px); font-weight: 500; letter-spacing: -.055em; line-height: 1; margin: 0 0 24px }
